@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0" >
+
+    <LinearLayout
+        android:id="@+id/rl_video"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_blue"
+        android:orientation="horizontal" >
+
+        
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/back" />
+        
+        
+        <ImageButton
+            android:id="@+id/ib_preview"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/preview_file" />
+
+         <ToggleButton
+            android:id="@+id/tb_videoRecord"
+            android:layout_width="0dip"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/video_record_bg"
+            android:textOff=""
+            android:textOn="" />
+         
+         <ImageButton
+            android:id="@+id/ib_audio"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/audio_mode" />
+         
+        <ImageButton
+            android:id="@+id/ib_photo"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/picture_mode" />
+
+       
+    </LinearLayout>
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/rl_video"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/back_blue" >
+
+        <ImageButton
+            android:id="@+id/ib_videoStop"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/previews" />
+
+        <ImageButton
+            android:id="@+id/ib_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/video" />
+
+        <ToggleButton
+            android:id="@+id/tb_videoRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/video_record_bg"
+            android:textOff=""
+            android:textOn="" />
+    -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_video" >
+
+        <SurfaceView
+            android:id="@+id/sv_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_videoTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="10dp"
+            android:text="@string/record_time"
+            android:textColor="@color/dark_pink"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+</RelativeLayout>

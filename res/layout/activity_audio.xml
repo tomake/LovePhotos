@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_white" >
+
+    <LinearLayout
+        android:id="@+id/rl_audio"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_blue"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/back" />
+
+        <ImageButton
+            android:id="@+id/ib_preview"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/preview_file" />
+
+        <ToggleButton
+            android:id="@+id/tb_audioRecord"
+            android:layout_width="0dip"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:checked="false"
+            android:textOff=""
+            android:textOn="" 
+            android:background="@drawable/record_bg"
+             />
+
+        <ImageButton
+            android:id="@+id/ib_photo"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/picture_mode" />
+
+        <ImageButton
+            android:id="@+id/ib_video"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/video_mode" />
+    </LinearLayout>
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/rl_audio"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/back_blue" >
+
+        <ImageButton
+            android:id="@+id/ib_audioStop"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/previews" />
+
+        <ImageButton
+            android:id="@+id/ib_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/audio" />
+
+        <ToggleButton
+            android:id="@+id/tb_audioRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/record_bg"
+            android:checked="false"
+            android:textOn=""
+            android:textOff=""
+              />
+              
+       
+    -->
+
+    <TextView
+        android:id="@+id/tv_audioTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_audio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/record_time"
+        android:textColor="@color/dark_pink"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/tv_audioTime"
+        android:scaleType="centerInside"
+        android:src="@drawable/audio_page" />
+
+</RelativeLayout>

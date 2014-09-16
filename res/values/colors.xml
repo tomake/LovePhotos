@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="back_white">#ffffff</color>
+    <color name="back_blue">#65c5f6</color>
+    <color name="dark_pink">#f50c33</color>
+    <color name="dark_gray">#3f3b3b</color>
+    <color name="divide_line">#f0f0f0</color>
+    <color name="transparency">#00000000</color>
+    <color name="text_color">#f0f0f0</color>
+    <color name="light_blue">#70caff</color>
+    <color name="blue">#24a9f8</color>
+</resources>

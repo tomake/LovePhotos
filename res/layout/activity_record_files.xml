@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_blue"
+     >
+	
+	<ImageView android:id="@+id/iv_titleImg"
+	    android:layout_width="match_parent"
+	    android:layout_height="80dip" 
+	    android:visibility="gone"
+	    android:scaleType="centerInside"
+	    />
+	"
+	<View android:id="@+id/v_divide"
+	    android:layout_width="match_parent"
+	    android:layout_height="10dip"
+	    android:visibility="gone"
+	    android:background="@color/blue"
+	    />
+    <ListView android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/divide_line"
+        android:dividerHeight="0.2dp"
+        android:listSelector="@color/transparency"
+        android:cacheColorHint="@color/transparency"
+        android:background="@color/dark_gray" />
+        
+ 	<View android:id="@+id/view_line"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="0.2dp"
+ 	    android:background="@color/divide_line" />
+</LinearLayout>

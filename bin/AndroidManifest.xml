@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.secretevidence"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="9" />
+
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.secretevidence.activity.PhotoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.secretevidence.activity.AudioActivity"
+            android:label="@string/title_activity_audio"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.secretevidence.activity.VideoActivity"
+            android:label="@string/title_activity_video"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="com.secretevidence.service.SecretService"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="SECRET_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.secretevidence.service.SecretService"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.secretevidence.activity.RecordFilesActivity"
+            android:label="@string/title_activity_preview" >
+        </activity>
+        <activity
+            android:name="com.secretevidence.activity.PreviewsActivity"
+            android:label="@string/title_activity_previews"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.secretevidence.activity.VideoPlayerActivity"
+            android:label="@string/title_activity_video_player" >
+        </activity>
+        <activity
+            android:name="com.secretevidence.activity.PhotoViewActivity"
+            android:label="@string/title_activity_photo_view" >
+        </activity>
+        <activity
+            android:name="com.secretevidence.activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.secretevidence.activity.PhotoGalleryActivity"
+            android:label="@string/title_activity_photo_gallery" >
+        </activity>
+    </application>
+
+</manifest>

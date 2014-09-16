@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">蜜精灵</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_audio">AudioActivity</string>
+    <string name="audio_recording">正在录音</string>
+    <string name="audio_pause">录音暂停</string>
+    <string name="audio_stop">录音停止</string>
+    <string name="record_time">录制时间</string>
+    <string name="title_activity_video">VideoActivity</string>
+    <string name="title_activity_preview">PreviewActivity</string>
+    <string name="folder_name">文件夹名</string>
+    <string name="title_activity_previews">PreviewsActivity</string>
+    <string name="title_activity_video_player">VideoPlayerActivity</string>
+    <string name="title_activity_photo_view">PhotoViewActivity</string>
+    <string name="file_preview">文件预览</string>
+    <string name="title_activity_main">二次求证</string>
+    <string name="title_activity_photo_gallery">PhotoGalleryActivity</string>
+
+</resources>
